@@ -28,3 +28,6 @@ After remoting onto the Virtual Machine I turned off all Firewall rules inside o
 ------------------------------------------------------------------------------------------------------------------------------
 After Confirmting the VM was running I attempted four failed login attempts on it using the username testtrial and checked the event viewer inside of the VM to confirm the failed log-in attempts were being logged.
 <img width="1870" height="1011" alt="image" src="https://github.com/user-attachments/assets/c2961cee-b921-4f5f-a538-37dedb97afeb" />
+
+Problems I ran into:
+- When creating my DCR wizard I wasn't able to make changes inside of it. I didnt have access, I learned this was due to Azure signing me in with a guest account when opening microsoft defender, I resolved this buy setting the signin to with the admin account by default so would would have full access to make any changes I needed to. 
